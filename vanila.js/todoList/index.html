@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chrome clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="inner">
+            <div class="js-clock">
+                <h1>00:00</h1>
+            </div>
+
+            <form class="js-form-greeting form" action="" method="POST">
+                <input class="input--text" type="text" placeholder="닉네임을 입력해주세요.">
+            </form>
+            <h4 class="js-greetings greetings"></h4>
+
+            <form class="js-form-todo" action="">
+                <input class="input--text" type="text" placeholder="오늘 할 일">
+            </form>
+            <ul class="js-todoList"></ul>
+            <span class="js-weather"></span>
+        </div>
+    </section>
+
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todolist.js"></script>
+    <script src="js/bg.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>
