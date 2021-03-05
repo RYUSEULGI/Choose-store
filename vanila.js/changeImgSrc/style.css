@@ -1,0 +1,64 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  /* 62.5 = 10px = 1rem */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font: 1.6rem;
+  height: 100vh;
+  margin: 0;
+  background-color: #b3b4b4;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.tab {
+  max-width: 33rem;
+  margin: 0 auto;
+  padding-top: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.tab-btn {
+  width: 11rem;
+  border: 0.1rem solid rgba(224, 226, 231, 0.75);
+  padding: 1rem;
+  background-color: #fff;
+  margin-right: 0.2rem;
+}
+
+.tab-btn :last-child {
+  margin-right: 0;
+}
+
+.tab-img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.tab-txt {
+  font-size: 1.4rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.tab-txt span {
+  font-size: 1rem;
+  font-weight: 400;
+}
+/*# sourceMappingURL=style.css.map */

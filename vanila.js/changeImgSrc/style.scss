@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    /* 62.5 = 10px = 1rem */
+    box-sizing: border-box;
+}
+
+body {
+    font: 1.6rem;
+    height: 100vh;
+    margin: 0;
+    background-color: #b3b4b4;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+
+// COMMON
+$large-font : 1.8rem;
+$middle-font : 1.6rem;
+$tab-font : 1.4rem;
+$small-font : 1rem;
+$border-color : rgba(224, 226, 231, 0.75);
+
+.tab{
+    max-width: 33rem;
+    margin: 0 auto;
+    padding-top: 20rem;
+    display:flex;
+    text-align: center;
+    &-btn{
+        width: 11rem;
+        border: .1rem solid $border-color;
+        padding: 1rem;
+        background-color: #fff;
+        margin-right: 0.2rem;
+        :last-child{
+            margin-right: 0;
+        }
+    }
+    &-img{
+        width: 4rem;
+        height: 4rem;
+    }
+    &-txt{
+        font-size: $tab-font;
+        font-weight: 700;
+        white-space: nowrap;
+        span{
+            font-size: $small-font;
+            font-weight: 400;
+        }
+    }
+}
+
