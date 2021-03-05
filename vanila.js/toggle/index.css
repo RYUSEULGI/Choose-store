@@ -1,0 +1,134 @@
+html {
+    font-size: 62.5%;
+    /* 62.5 = 10px = 1rem */
+    box-sizing: border-box;
+}
+
+body {
+    font: 1.6rem;
+    height: 100vh;
+    margin: 0;
+    background-color: #FFE6EB;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+button {
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #3f4150;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    outline-style: none;
+}
+
+.body__container {
+    padding-top: 15rem;
+    max-width: 30rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    color: #EB0000;
+}
+
+form {
+    border: .1rem solid #fff;
+    border-radius: .4rem;
+    padding: 1rem 3rem;
+    background-color: #fff;
+}
+
+form .dropdown {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0.8rem;
+}
+
+form .dropdown-toggle {
+    width: 100%;
+    height: 5rem;
+    padding: 0 1.6rem;
+    line-height: 1.5;
+    color: rgba(133, 136, 150, 0.5);
+    text-align: left;
+    border: 1px solid rgba(224, 226, 231, 0.75);
+    border-radius: .7rem;
+    transition: border-color 100ms ease-in;
+    position: relative;
+}
+
+form .dropdown-toggle.select {
+    color: #3f4150;
+    border-color: rgba(224, 226, 231, 1);
+}
+
+.dropdown-toggle:active {
+    border-color: rgba(224, 226, 231, 1);
+}
+
+form .dropdown-menu {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    z-index: 9;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: .7rem;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 4px 9px 0 rgba(224, 226, 231, 0.75);
+    transition: border-color 200ms ease-in, padding 200ms ease-in,
+        max-height 200ms ease-in, box-shadow 200ms ease-in;
+}
+
+form .dropdown-menu.active {
+    max-height: 50rem;
+    border-color: rgba(224, 226, 231, 0.5);
+    box-shadow: 0 4px 9px 0 rgba(63, 65, 80, 0.1);
+}
+
+form .dropdown-item {
+    width: 100%;
+    border-bottom: .1rem solid rgba(0, 0, 0, .1);
+}
+
+form .dropdown-item:last-child {
+    border-bottom: none;
+}
+
+form .dropdown-cont {
+    text-align: left;
+    width: 100%;
+    padding: 1rem 2rem;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+form .dropdown-cont:hover {
+    background-color: #f8f9fa;
+}
+
+form .next-btn {
+    padding: 0 8rem;
+    border-radius: .7rem;
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.4rem;
+    background-color: #000;
+    color: #fff;
+    transition: background-color 150ms ease-in;
+}
+
+form .next-btn:disabled {
+    background-color: #e0e2e7;
+    cursor: not-allowed;
+}
