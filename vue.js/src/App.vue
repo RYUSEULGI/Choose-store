@@ -1,18 +1,90 @@
 <template>
-  <div id="app">
-    <Calculator/>
-    <router-view/>
-  </div>
+  <v-app id="inspire">
+    <v-navigation-drawer v-model="drawer" app>
+          <v-list-item>
+            <v-list-item-content>
+              <v-list-item-title class="title">
+                Using Vuetify
+              </v-list-item-title>
+              <v-list-item-subtitle>
+                awesome
+              </v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-divider></v-divider>
+
+          <v-list
+            dense
+            nav
+          >
+            <v-list-item
+              v-for="item in items"
+              :key="item.title"
+              :to="item.to"
+              link
+            >
+              <v-list-item-icon>
+                <v-icon>{{ item.icon }}</v-icon>
+              </v-list-item-icon>
+
+              <v-list-item-content>
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list>
+    </v-navigation-drawer>
+
+    <v-app-bar
+      absolute
+      color="teal lighten-3"
+      dark
+      hide-on-scroll
+      prominent
+      scroll-target="#scrolling-techniques-4"
+    >
+      <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+
+      <v-toolbar-title>Title</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+      <v-btn icon>
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon>mdi-heart</v-icon>
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon>mdi-dots-vertical</v-icon>
+      </v-btn>
+    </v-app-bar>
+    <v-sheet
+      id="scrolling-techniques-4"
+      class="overflow-y-auto"
+      max-height="600"
+    >
+      <v-container style="height: 1000px;"></v-container>
+    </v-sheet>
+
+    <v-main>
+      <router-view></router-view>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import Calculator from './components/Calculator.vue'
-
-export default {
-  components: { Calculator },
-  name: 'App'
-}
+  export default {
+    data() {
+      return{
+        drawer: null,
+        items: [
+          { title: 'Todo', icon: 'mdi-format-list-checks', to: '/todoList'},
+          { title: 'Calculator', icon: 'mdi-calculator', to: '/calculator'},
+        ]
+      }
+    }
+  }
 </script>
-
-<style>
-</style>
