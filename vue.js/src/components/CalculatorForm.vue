@@ -26,7 +26,7 @@
 
 <script>
     export default {
-        name: 'Calculator',
+        name: 'CalculatorForm',
         data(){
             return {
                 res: '',
