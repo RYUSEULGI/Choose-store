@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Calculator from '@/components/Calculator'
-import TodoList from '@/views/todoList'
+import Calculator from '@/views/Calculator'
+import TodoList from '@/views/TodoList'
 
 Vue.use(VueRouter)
 

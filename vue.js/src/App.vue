@@ -37,15 +37,13 @@
 
     <v-app-bar
       absolute
-      color="teal lighten-3"
-      dark
-      hide-on-scroll
-      prominent
-      scroll-target="#scrolling-techniques-4"
+      color="white"
+      elevate-on-scroll
+      scroll-target="#scrolling-techniques-7"
     >
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Title</v-toolbar-title>
+      <v-toolbar-title>Vue Study</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
@@ -64,7 +62,7 @@
     <v-sheet
       id="scrolling-techniques-4"
       class="overflow-y-auto"
-      max-height="600"
+      max-height="80"
     >
       <v-container style="height: 1000px;"></v-container>
     </v-sheet>
@@ -81,7 +79,7 @@
       return{
         drawer: null,
         items: [
-          { title: 'Todo', icon: 'mdi-format-list-checks', to: '/todoList'},
+          { title: 'TodoList', icon: 'mdi-format-list-checks', to: '/todoList'},
           { title: 'Calculator', icon: 'mdi-calculator', to: '/calculator'},
         ]
       }
