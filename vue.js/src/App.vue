@@ -81,6 +81,9 @@
         items: [
           { title: 'TodoList', icon: 'mdi-format-list-checks', to: '/todoList'},
           { title: 'Calculator', icon: 'mdi-calculator', to: '/calculator'},
+          { title: 'Json data', icon: 'mdi-book-cog-outline', to: '/place'},
+          { title: 'Signup', icon: 'mdi-book-cog-outline', to: '/signup'},
+          { title: 'Login', icon: 'mdi-book-cog-outline', to: '/login'},
         ]
       }
     }
