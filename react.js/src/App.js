@@ -1,19 +1,13 @@
 import React from 'react';
-import { HashRouter as Router, Route} from 'react-router-dom';
-//importing componets
-import InputForm from './Components/InputForm';
-import './App.css';
+import { Route } from 'react-router-dom';
+import CounterCotainer from './container/CounterContainer';
 
-function App() {
+const App = () => {
     return (
-        <div className="App">
-            <header>
-                <h1>Today to do list🐾</h1>
-            </header>
-            <InputForm />
-        </div>
-
+        <>
+            <Route exact path="/counter" component={CounterCotainer} />
+        </>
     );
-} 
+};
 
 export default App;
