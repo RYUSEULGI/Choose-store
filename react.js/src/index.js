@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { createStore, combineReducers } from 'redux';
+import { combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
-import counterReducer from './store/Counter.reducer';
+import { configureStore } from '@reduxjs/toolkit';
+import counterReducer from './store/counter.reducer';
+import counterSlice from './store/counter.slice';
 
-const rootReducer = combineReducers({ counterReducer });
-const store = createStore(rootReducer);
+const rootReducer = combineReducers({ counterReducer, counterSlice });
+
+// 바닐라 리덕스
+// const store = createStore(rootReducer);
+
+const store = configureStore({
+    reducer: rootReducer,
+});
 
 ReactDOM.render(
     <Provider store={store}>
