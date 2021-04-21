@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import CounterCotainer from './container/CounterContainer';
-import RTKCounterContainer from './container/RTKCounterContainer';
+import CounterCotainer from './couter/container/CounterContainer';
+import RTKCounterContainer from './couter/container/RTKCounterContainer';
 
 const App = () => {
     return (
