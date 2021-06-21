@@ -5,8 +5,8 @@ import { combineReducers } from 'redux';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from './couter/store/counter.reducer';
-import counterSlice from './couter/store/counter.slice';
+import counterReducer from 'couter/store/counter.reducer';
+import counterSlice from 'couter/store/counter.slice';
 
 const rootReducer = combineReducers({ counterReducer, counterSlice });
 

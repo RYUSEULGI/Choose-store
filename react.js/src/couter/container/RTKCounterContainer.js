@@ -1,7 +1,7 @@
 import React from 'react';
-import RTKCounter from '../components/RTKCounter';
+import { RTKCounter } from 'couter/index';
 import { useDispatch, useSelector } from 'react-redux';
-import { decrease, increase } from '../store/counter.slice';
+import { decrease, increase } from 'couter/store/counter.slice';
 
 const RTKCounterContainer = () => {
     const dispatch = useDispatch();
