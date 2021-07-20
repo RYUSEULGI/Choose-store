@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import { Home } from 'common/index';
 import { CounterCotainer, RTKCounterContainer } from 'couter/index';
 import { Chat } from 'chat/index';
+import Header from 'header/components/Header';
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
                 component={RTKCounterContainer}
             />
             <Route exact path="/chat" component={Chat} />
+            <Route exact path="/wantedNav" component={Header} />
         </>
     );
 };
